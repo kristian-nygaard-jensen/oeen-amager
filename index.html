@@ -36,6 +36,74 @@
              font-family: PTSansNarrow-Bold;
              color: #007bc4;
              font-size: 0.5em;
+             display: table;
+             width: 100%;
+         }
+         /*
+            .product {
+            display: table-cell;
+            }
+            .spacer {
+            display: table-cell;
+            border-bottom-style: dotted;
+            }
+            .price {
+            display: table-cell;
+            float: right;
+            }
+          */
+         p {
+             width: 400px;
+             border-bottom: 2px dotted #ddd;
+         }
+         /* .discription {
+            z-index: 1;
+            }
+            .price {
+            right: 0;
+            position: absolute;
+            text-align: right;
+            z-index: 2;
+            } */
+
+         /* dt {
+            float: left;
+            width: 400px;
+            overflow: hidden;
+            text-transform: capitalize;
+            white-space: nowrap
+            }
+            dd { float: left; overflow: hidden; text-align: right; }
+            dd:after {
+            content: 'DKK';
+            }
+
+            dt:after { content: " .................................................................................." } */
+         .fam, .alm {
+             text-align: right;
+         }
+         .alm:after, .fam:after {
+             content: 'DKK';
+         }
+         .navn {
+             text-align: left;
+             text-transform: uppercase;
+             font-family: PTSansNarrow-Bold;
+             color: #007bc4;
+         }
+         .sektion {
+             font-family: Pacifico;
+             color: #f18700;
+             font-size: 4rem;
+         }
+         table {
+             font-family: PTSansNarrow-Bold;
+         }
+         .højre {
+             text-align: right;
+         }
+         .nummerbredde {
+             width: 3rem;
          }
         </style>
     </head>
@@ -43,8 +111,40 @@
         <img src="g41582.png" />
         <div class="grid-container">
             <div class="grid-item">
-                <div class="menu-section">Pizza</div>
-                <div class="menu-item">MARGHERITA</div>
+                <table>
+                    <tr>
+                        <td colspan="4" class="sektion">Pizza</td>
+                    </tr>
+                    <tr>
+                        <th class="nummerbredde"></th>
+                        <th>Alle er med tomat og ost</th>
+                        <th class="højre">Alm.</th>
+                        <th class="højre">Fam.</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td class="navn">Amager pizza</td>
+                        <td class="alm">79&nbsp;</td>
+                        <td class="fam">125&nbsp;</td>
+                    </tr>
+                </table>
+                <!-- <dl>
+                     <dt>MARGHERITA</dt>
+                     <dd>65</dd>
+                     </dl> -->
+                <!-- <div class="menu-section">Pizza</div>
+                     <div class="menu-item">
+                     <div class="product">MARGHERITA
+                     </div>
+                     <div class="spacer">
+                     &nbsp;
+                     </div>
+                     <div class="price">90</div>
+                     </div> -->
+                <!-- <p>
+                     <span class="discription">MARGHERITA</span>
+                     <span class="price">99</span>
+                     </p> -->
             </div>
             <div class="grid-item">2</div>
             <div class="grid-item">3</div>
