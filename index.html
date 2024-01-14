@@ -52,10 +52,10 @@
             float: right;
             }
           */
-         p {
-             width: 400px;
-             border-bottom: 2px dotted #ddd;
-         }
+         /* p {
+            width: 400px;
+            border-bottom: 2px dotted #ddd;
+            } */
          /* .discription {
             z-index: 1;
             }
@@ -86,7 +86,6 @@
              content: 'DKK';
          }
          .navn {
-             text-align: left;
              text-transform: uppercase;
              font-family: PTSansNarrow-Bold;
              color: #007bc4;
@@ -105,25 +104,119 @@
          .nummerbredde {
              width: 3rem;
          }
+
+         /*  */
+         p {
+             background: inherit;
+             width: 70%;
+             max-width: 40rem;
+             min-width: 300px;
+             margin: 0 auto;
+             font-size: 1.2rem;
+             line-height: 1.5rem;
+             color: #fff;
+             padding-right: 4rem;
+             margin-bottom: .5rem;
+         }
+         p:before {
+             content: '';
+             position: absolute;
+             bottom: .4rem;
+             width: 100%;
+             height: 0;
+             line-height: 0;
+             border-bottom: 2px dotted #ddd;
+         }
+         .descripcion {
+             background: inherit;
+             display: inline;
+             z-index: 1;
+             padding-right: .2rem;
+         }
+         .precio {
+             background: inherit;
+             position: absolute;
+             min-width: 4rem;
+             bottom: 0;
+             right: 0;
+             padding-left: .2rem;
+             text-align: right;
+             z-index: 2;
+         }
+         .precio:after {
+             content: '€';
+         }
+
+         ul.submenu li {
+             line-height: 1.6rem;
+             margin-left: 2rem;
+             list-style-type: circle;
+             text-transform: lowercase;
+             width: 100%;
+         }
+         li.dish {
+             display: flex;
+             justify-content: space-between;
+         }
+         li.dish > div {
+             display: flex;
+             flex: 1;
+         }
+         li.dish span.short::after {
+             content: " ";
+             flex: 1;
+             border-bottom: 1px dotted #000;
+         }
+         span.short {
+             font-size: 0.8rem;
+             font-style: italic;
+             flex: 1;
+             display: flex;
+         }
+         span.price {
+             font-size: 1rem;
+         }
         </style>
     </head>
     <body>
         <img src="g41582.png" />
         <div class="grid-container">
             <div class="grid-item">
+                <ul>
+                    <li class=dish>
+                        <div> <a class=dish>Dish 1</a><span class=short>(Vis, Pastfdafdasa)</span></div>
+                        <span class=price>€</span>
+                    </li>
+
+                    <li class=dish>
+                        <div> <a class=dish>Dish 2</a><span class=short>(Vis, Pastcx\zc\xzcx\za)</span></div>
+                        <span class=price>€</span>
+                    </li>
+
+                    <li class=dish>
+                        <div> <a class=dish>Dish 3</a><span class=short>(Vis, Pastaczczcxz\cx\z)</span></div>
+                        <span class=price>€</span>
+                    </li>
+                </ul>
+                <p>
+                    <span class='descripcion'>Trócola</span>
+                    <span class='precio'>56´72</span>
+                </p>
                 <table>
                     <tr>
                         <td colspan="4" class="sektion">Pizza</td>
                     </tr>
                     <tr>
                         <th class="nummerbredde"></th>
-                        <th>Alle er med tomat og ost</th>
+                        <th style="text-align: left">Alle er med tomat og ost</th>
                         <th class="højre">Alm.</th>
                         <th class="højre">Fam.</th>
                     </tr>
                     <tr>
                         <td>1.</td>
-                        <td class="navn">Amager pizza</td>
+                        <td style="text-align: left;width: 300px; overflow: hidden">
+                            <div class="navn">Amager pizza</div>
+                        </td>
                         <td class="alm">79&nbsp;</td>
                         <td class="fam">125&nbsp;</td>
                     </tr>
