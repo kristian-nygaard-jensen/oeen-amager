@@ -1,8 +1,24 @@
 * Serverfri
 ** Landingszone [75%]
+*** Skal
 # Spreadsheet -> JSX (Python lambda)
 - [X] Does your business require administrative isolation between workloads?
 - [ ] Does your business require limited visibility and discoverability of workloads?
 - [X] Does your business require isolation to minimize the scope of impact?
 # Der bør nok være versionering på S3 (Spreadsheet cloud storage). On upload event
 - [X] Does your business require strong isolation of recovery and/or auditing data?
+
+*** Hvorfor
+
+- Security controls – Different applications might have different
+  security profiles, requiring different control policies and
+  mechanisms around them. It’s easier to talk to an auditor and point
+  to a single account hosting the Payment Card Industry (PCI)
+  workload.
+# frontend backend...
+- Isolation – An account is a unit of security protection. Potential
+  risks and security threats should be contained within an account
+  without affecting others. There could be different security needs
+  that require you to isolate one account from one another, whether
+  due to multiple teams or a different security profile.
+# samme
