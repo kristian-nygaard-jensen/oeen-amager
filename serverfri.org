@@ -1,0 +1,8 @@
+* Serverfri
+** Landingszone [75%]
+# Spreadsheet -> JSX (Python lambda)
+- [X] Does your business require administrative isolation between workloads?
+- [ ] Does your business require limited visibility and discoverability of workloads?
+- [X] Does your business require isolation to minimize the scope of impact?
+# Der bør nok være versionering på S3 (Spreadsheet cloud storage). On upload event
+- [X] Does your business require strong isolation of recovery and/or auditing data?
